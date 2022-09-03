@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet" />
+    <title>Admin Dashboard</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-top">
+            <div class="search-bar">
+                <span class="material-icons-outlined search-icon">search</span>
+                <input type="text" name="search" id="search">
+            </div>
+            <div class="top-user">
+                <span class="material-icons-outlined"> notifications_active </span>
+                <img src="img/profile/MG341.jpeg">
+                <p class="username">Morgan Oakley</p>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="bottom-user">
+                <img src="img/profile/MG341.jpeg">
+                <div class="greeting-user">
+                    <p class="greeting">Hi there,</p>
+                    <p class="username">Morgan Oakley(@morgan)</p>
+                </div>
+            </div>
+            <div class="buttons">
+                <button class="btn">New</button>
+                <button class="btn">Upload</button>
+                <button class="btn">Share</button>
+            </div>
+        </div>
+    </header>
+    <aside>
+        <div class="logo">
+            <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"
+                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="m3.514 6.636c-.317.179-.514.519-.514.887v8.95c0 .37.197.708.514.887 1.597.901 6.456 3.639 8.005 4.512.152.085.319.128.487.128.164 0 .328-.041.477-.123 1.549-.855 6.39-3.523 7.994-4.408.323-.177.523-.519.523-.891v-9.055c0-.368-.197-.708-.515-.887-1.595-.899-6.444-3.632-7.999-4.508-.151-.085-.319-.128-.486-.128-.168 0-.335.043-.486.128-1.555.876-6.405 3.609-8 4.508zm15.986 2.115v7.525l-6.75 3.722v-7.578zm-14.264-1.344 6.764-3.813 6.801 3.834-6.801 3.716z"
+                    fill-rule="nonzero" />
+            </svg>
+            <span>Dashboard</span>
+        </div>
+        <div class="nav">
+            <ul>
+                <li class="nav-item">
+                    <a href="#" class="nav-link"><span class="material-icons-outlined">home</span> Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link"><span class="material-icons-outlined"> person </span>
+                        Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link"><span class="material-icons-outlined"> message </span> Messages</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link"><span class="material-icons-outlined"> history </span> History</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link"><span class="material-icons-outlined"> task </span> Tasks</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link"><span class="material-icons-outlined"> groups </span>
+                        Communities</a>
+                </li>
+            </ul>
+        </div>
+        <div class="settings">
+            <ul>
+                <li class="settings-item">
+                    <a href="#" class="nav-link"><span class="material-icons-outlined"> settings </span> Settings</a>
+                </li>
+                <li class="settings-item">
+                    <a href="#" class="nav-link"><span class="material-icons-outlined"> help_center </span>
+                        Support</a>
+                </li>
+                <li class="settings-item">
+                    <a href="#" class="nav-link"><span class="material-icons-outlined"> verified_user </span>
+                        Privacy</a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+    <main>
+        <div class="projects">
+            <h3>Your Projects</h3>
+            <div class="project-container">
+                <div class="project-card">
+                    <div class="card-text">
+                        <h4>Super Cool Project</h4>
+                        <p>Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id facilisis felis
+                            accumsan
+                            nec.</p>
+                    </div>
+                    <div class="actions">
+                        <span class="material-icons-outlined"> star_outline </span>
+                        <span class="material-icons-outlined"> visibility </span>
+                        <span class="material-icons-outlined"> share </span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="card-text">
+                        <h4>Less Cool Project</h4>
+                        <p>Nullam condimentum ipsum ut lectus vehicula consectetur. Quisque sed dolor tincidunt,
+                            consectetur
+                            sapien et, facillisis dolor. Duis sem purus, dignissim ut sapien in, varius pellentesque
+                            lacus.
+                        </p>
+                    </div>
+                    <div class="actions">
+                        <span class="material-icons-outlined"> star_outline </span>
+                        <span class="material-icons-outlined"> visibility </span>
+                        <span class="material-icons-outlined"> share </span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="card-text">
+                        <h4>Impossible App</h4>
+                        <p>In hac habitasse platea dictumst. Vivamus dictum rutrum arcu, a placerat velit sagittis id.
+                        </p>
+                    </div>
+                    <div class="actions">
+                        <span class="material-icons-outlined"> star_outline </span>
+                        <span class="material-icons-outlined"> visibility </span>
+                        <span class="material-icons-outlined"> share </span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="card-text">
+                        <h4>Easy Peasy App</h4>
+                        <p>Etiam cursus eros ac efficitur fringilla. Vestibulum dignissim urna eget accumsan aliquam.
+                            Curabitur dignissim nisl in tortor comodo, ac bibendum magna tincidunt.
+                        </p>
+                    </div>
+                    <div class="actions">
+                        <span class="material-icons-outlined"> star_outline </span>
+                        <span class="material-icons-outlined"> visibility </span>
+                        <span class="material-icons-outlined"> share </span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="card-text">
+                        <h4>Ad Blocker</h4>
+                        <p>Quisque eget rutrum nisl. Nam augue justo, cursus vitae metus vel, pharetra hendreit felis.
+                            Aliquam sed malesuada eros.
+                        </p>
+                    </div>
+                    <div class="actions">
+                        <span class="material-icons-outlined"> star_outline </span>
+                        <span class="material-icons-outlined"> visibility </span>
+                        <span class="material-icons-outlined"> share </span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="card-text">
+                        <h4>Monkey Maker</h4>
+                        <p>Praesent convallis, libero quis congue elementum, nunc ante faucibus sapien, ac scelerisque
+                            tortor purus sit amet ex. Pellentesque mollis nec sem vel aliquam.
+                        </p>
+                    </div>
+                    <div class="actions">
+                        <span class="material-icons-outlined"> star_outline </span>
+                        <span class="material-icons-outlined"> visibility </span>
+                        <span class="material-icons-outlined"> share </span>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+        <div class="right">
+            <div class="announcement">
+                <h3>Announcements</h3>
+                <div class="announcement-container">
+                    <div class="announcement-heading">Site Maintenance</div>
+                    <div class="announcement-text">Vestibulum condimentum tellus lacus, in accumsan elit maximus ac.
+                        Donec
+                        hendrerit sodales congue...</div>
+                    <hr>
+                    <div class="announcement-heading">Community Share Day</div>
+                    <div class="announcement-text">Nam vel lectus tincidunt, rutrum nulla eu, ornare libero. Aliquam
+                        dictum
+                        accumsan porttitor...</div>
+                    <hr>
+                    <div class="announcement-heading">Updated Privacy Policy</div>
+                    <div class="announcement-text">Phasellus efficitur nisi eget elit consectetur, eget condimentum ante
+                        auctor. Cras fringilla sagittis sem in mattis...</div>
+                </div>
+            </div>
+            <div class="trending">
+                <h3>Trending</h3>
+                <div class="trending-container">
+                    <div class="trending-user">
+                        <img src="img/profile/Screen Shot 2022-09-03 at 00.37.38.png">
+                        <div class="trending-text">
+                            <p class="trending-name">@tegan</p>
+                            <p>World Peace Builder</p>
+                        </div>
+                    </div>
+                    <div class="trending-user">
+                        <img src="img/profile/MG341.jpeg">
+                        <div class="trending-text">
+                            <p class="trending-name">@morgan</p>
+                            <p>Super Cool Project</p>
+                        </div>
+                    </div>
+                    <div class="trending-user">
+                        <img src="img/profile/Screen Shot 2022-09-03 at 01.03.18.png">
+                        <div class="trending-text">
+                            <p class="trending-name">@kendall</p>
+                            <p>Life Changing App</p>
+                        </div>
+                    </div>
+                    <div class="trending-user">
+                        <img src="img/profile/Screen Shot 2022-09-03 at 00.37.30.png">
+                        <div class="trending-text">
+                            <p class="trending-name">@alex</p>
+                            <p>No Traffic Maker</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</html>
