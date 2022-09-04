@@ -23,7 +23,6 @@ body {
     grid-template-rows: 160px 5fr;
     width: 100vw;
     height: 100vh;
-    position: absolute;
 }
 
 header {
@@ -143,6 +142,7 @@ aside {
     flex-direction: column;
     gap: 40px;
     padding: 30px;
+    position: relative;
 }
 
 
@@ -429,10 +429,11 @@ h3 {
     .side-link {
         padding: 15px;
         justify-content: center;
+
     }
 
     svg {
-        padding-left: 3px;
+        padding-top: 20px;
     }
 
     main {
