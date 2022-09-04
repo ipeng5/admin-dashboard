@@ -481,6 +481,12 @@ h3 {
         transition: 0.3s;
     }
 
+    aside a:hover {
+        background-color: transparent;
+        color: var(--hover);
+        border-left: transparent;
+    }
+
     main {
         padding: 20px;
         gap: 10px;
