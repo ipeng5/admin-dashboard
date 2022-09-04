@@ -15,26 +15,19 @@
     --color-text: #929292;
     --hover: #c7d2fe;
     --shadow: 0 2px 6px rgb(0 0 0 / 0.1);
-
 }
-
-
 
 body {
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 160px 5fr;
     width: 100vw;
-
 }
 
 header {
     padding: 10px 30px;
     z-index: 1;
     box-shadow: var(--shadow);
-    position: sticky;
-    top: 0px;
-    background-color: white;
 }
 
 .header-top {
@@ -90,7 +83,6 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 10px 20px;
-
 }
 
 .header-bottom img {
@@ -146,16 +138,26 @@ header {
 aside {
     background-color: var(--color-side);
     grid-row: 1 / -1;
+}
+
+.sidebar-container {
+    position: sticky;
+    top: 0px;
     display: flex;
     flex-direction: column;
     gap: 40px;
-    padding: 30px;
 }
+
+.side-link {
+    padding-left: 40px;
+    background-color: var(--color-side);
+}
+
 
 aside li {
     list-style: none;
     line-height: 2.8em;
-    font-size: 1.1em;
+    font-size: 1.2em;
     font-weight: 500;
 }
 
@@ -163,7 +165,9 @@ aside li {
     font-size: 28px !important;
 }
 
-
+.material-icons-outlined:hover {
+    cursor: pointer;
+}
 
 aside a {
     color: white;
@@ -172,7 +176,7 @@ aside a {
 }
 
 aside a:hover {
-    color: var(--hover);
+    background-color: #414b57ca;
 }
 
 .side-link {
@@ -181,12 +185,11 @@ aside a:hover {
     gap: 20px;
 }
 
-
-
 .logo {
     display: flex;
     align-items: center;
     gap: 15px;
+    padding: 30px;
 }
 
 .logo span {
@@ -202,11 +205,6 @@ aside a:hover {
 svg {
     fill: white;
     width: 50px;
-}
-
-.nav-item,
-.settings-item {
-    padding: 0 20px;
 }
 
 header {
@@ -236,7 +234,7 @@ main {
 
 .project-card {
     background-color: white;
-    border-radius: 5px;
+    border-radius: 10px;
     min-height: 250px;
     display: flex;
     flex-direction: column;
@@ -254,7 +252,7 @@ main {
 
 .announcement-container {
     background-color: white;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 30px;
     box-shadow: var(--shadow);
 }
@@ -292,18 +290,16 @@ h4:hover {
 hr {
     margin: 15px 0 15px 0;
     border-top: 1px solid rgba(186, 186, 186, 0.495);
-
 }
 
 .trending-container {
     background-color: white;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 30px;
     display: flex;
     flex-direction: column;
     gap: 25px;
     box-shadow: var(--shadow);
-
 }
 
 .trending-user {
@@ -341,7 +337,6 @@ h3 {
     color: var(--color-text)
 }
 
-
 @media (max-width: 1100px) {
     main {
         grid-template-columns: 3fr 2fr;
@@ -361,9 +356,8 @@ h3 {
         width: 40px;
     }
 
-    aside {
+    .sidebar-container {
         gap: 20px;
-        padding: 20px 25px 15px 15px;
     }
 
     aside li {
@@ -372,7 +366,6 @@ h3 {
         font-weight: 500;
     }
 }
-
 
 @media screen and (max-width: 975px) {
 
@@ -418,26 +411,29 @@ h3 {
 
 }
 
-
 @media screen and (max-width: 770px) {
     body {
         grid-template-columns: 70px 1fr;
     }
-
 
     .link-text,
     .logo span {
         display: none;
     }
 
-    svg {
-        padding-left: 3px;
+    .logo {
+
+        padding: 14px;
     }
 
-    .nav-item,
-    .settings-item {
-        padding: 10px 0 10px 3px;
-        align-items: center;
+
+    .side-link {
+        padding: 15px;
+        justify-content: center;
+    }
+
+    svg {
+        padding-left: 3px;
     }
 
     main {
