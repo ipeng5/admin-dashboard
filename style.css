@@ -177,6 +177,8 @@ aside a {
 
 aside a:hover {
     background-color: #414b57ca;
+    color: var(--hover);
+    border-left: 3px solid var(--hover)
 }
 
 .side-link {
