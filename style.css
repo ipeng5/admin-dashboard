@@ -22,6 +22,7 @@ body {
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 160px 5fr;
     width: 100vw;
+    height: 100vh;
 }
 
 header {
@@ -45,7 +46,7 @@ header {
 .search-bar input {
     width: 35vw;
     height: 25px;
-    background-color: rgba(226, 232, 240, 255);
+    background-color: #E2E8F0;
     border: none;
     border-radius: 15px;
 }
@@ -76,7 +77,6 @@ header {
 .header-top img {
     width: 40px;
     border-radius: 50%;
-
 }
 
 .header-bottom {
@@ -138,21 +138,17 @@ header {
 aside {
     background-color: var(--color-side);
     grid-row: 1 / -1;
-}
-
-.sidebar-container {
-    position: sticky;
-    top: 0px;
     display: flex;
     flex-direction: column;
     gap: 40px;
+    padding: 30px;
 }
+
 
 .side-link {
     padding-left: 40px;
     background-color: var(--color-side);
 }
-
 
 aside li {
     list-style: none;
@@ -339,6 +335,7 @@ h3 {
     color: var(--color-text)
 }
 
+
 @media (max-width: 1100px) {
     main {
         grid-template-columns: 3fr 2fr;
@@ -356,10 +353,6 @@ h3 {
 
     svg {
         width: 40px;
-    }
-
-    .sidebar-container {
-        gap: 20px;
     }
 
     aside li {
@@ -428,6 +421,9 @@ h3 {
         padding: 14px;
     }
 
+    aside {
+        padding: 0px;
+    }
 
     .side-link {
         padding: 15px;
