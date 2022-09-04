@@ -23,6 +23,7 @@ body {
     grid-template-rows: 160px 5fr;
     width: 100vw;
     height: 100vh;
+    position: absolute;
 }
 
 header {
